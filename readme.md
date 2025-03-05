@@ -4,6 +4,6 @@
   3. Auto configuration
 
 # @SpringBootApplication consists of
-  @EnableAutoConfiguration
-  @ComponentScan - it scans all the classes with @Component annotation which is inside the base package
-  @Configuration - it will look for all classes with @Configuration and with @Bean for the methods and will create beans for them.
+  1. @EnableAutoConfiguration
+  2. @ComponentScan - it scans all the classes with @Component annotation which is inside the base package
+  3. @Configuration - it will look for all classes with @Configuration and with @Bean for the methods and will create beans for them.
