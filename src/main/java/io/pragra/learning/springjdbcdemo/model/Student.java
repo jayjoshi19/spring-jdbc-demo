@@ -1,29 +1,29 @@
 package io.pragra.learning.springjdbcdemo.model;
 
-public class Employee {
+public class Student {
 
-    private int employeeId;
+    private int studentId;
     private String firstName;
     private String lastName;
     private String email;
 
-    public Employee(int employeeId, String firstName, String lastName, String email) {
-        this.employeeId = employeeId;
+    public Student(int studentId, String firstName, String lastName, String email) {
+        this.studentId = studentId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
     }
 
-    public Employee(){
+    public Student(){
 
     }
 
-    public int getEmployeeId() {
-        return employeeId;
+    public int getStudentId() {
+        return studentId;
     }
 
-    public void setEmployeeId(int employeeId) {
-        this.employeeId = employeeId;
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
     }
 
     public String getFirstName() {
@@ -52,11 +52,11 @@ public class Employee {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("Employee{");
-        sb.append("employeeId=").append(employeeId);
-        sb.append(", firstName='").append(firstName).append('\'');
-        sb.append(", lastName='").append(lastName).append('\'');
-        sb.append(", email='").append(email).append('\'');
+        final StringBuffer sb = new StringBuffer("Student{");
+        sb.append("studentId=").append(studentId);
+        sb.append(", \nfirstName='").append(firstName).append('\'');
+        sb.append(", \nlastName='").append(lastName).append('\'');
+        sb.append(", \nemail='").append(email).append('\'');
         sb.append('}');
         return sb.toString();
     }

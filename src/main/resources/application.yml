@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring-jdbc-demo
+  datasource:
+    url: jdbc:h2:mem:appDb
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+
+server:
+  port: 8081

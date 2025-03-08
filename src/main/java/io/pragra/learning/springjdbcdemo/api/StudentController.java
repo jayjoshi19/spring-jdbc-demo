@@ -1,7 +1,7 @@
 package io.pragra.learning.springjdbcdemo.api;
 
-import io.pragra.learning.springjdbcdemo.model.Employee;
-import io.pragra.learning.springjdbcdemo.repository.EmployeeRepo;
+import io.pragra.learning.springjdbcdemo.model.Student;
+import io.pragra.learning.springjdbcdemo.repository.StudentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/employee")
-public class EmployeeController {
+@RequestMapping("/student")
+public class StudentController {
 
     @Autowired
-    EmployeeRepo repository;
+    StudentRepo studentRepo;
 
-    @GetMapping("/getAllEmployees")
-    public List<Employee> getAllEmployees(){
-        return repository.getEmployees();
+    @GetMapping("/getAllStudents")
+    public List<Student> getAllStudents(){
+        return studentRepo.getAllStudents();
     }
 }
